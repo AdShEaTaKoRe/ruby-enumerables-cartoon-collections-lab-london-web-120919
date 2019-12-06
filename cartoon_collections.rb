@@ -16,6 +16,6 @@ def find_the_cheese(cheeses)
   cheese_types = ["cheddar", "gouda", "camembert"]
   
   cheeses.find {|cheese|
-    
+    cheese_types.any {|cheese_type| cheese_type == cheese}
   }
 end
